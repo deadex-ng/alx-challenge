@@ -1,53 +1,72 @@
 # alx-challenge
+I have created an online store that sells musical instruments called `sello`. Users can sign up on sello to buy and sell musical instruments. If you find an instrument you'd like to buy, add it to your cart and checkout with stripe.
 
-### One
-Fork the repo
+## What users can do with sello
+- sign in or sign up
+- sell instruments and up upload pictures
+- add instruments to cart
+- pay with [stripe](https://stripe.com/)
 
-### Two
-Open repo in codespace
+### Fork the repo
+- Fork the repo
 
-### Three
-`cd rails-store`
+### Open in codespace dev environment
+- Open repo in codespace
 
-### Four
-`rvm install "ruby-2.7.2"`
+### cd to the project folder
+- `cd rails-store`
 
-### Five
-`gem install rails -v 6.0.0.rc1`
+### Install ruby
+- `rvm install "ruby-2.7.2"`
 
-### Six
-`sudo apt-get update`
+### Install rails 
+- `gem install rails -v 6.0.0.rc1`
 
-### Seven
-`sudo apt-get install libmagickwand-dev`
+### Update packages list
+- `sudo apt-get update`
 
-### Eight
-`nvm install 12.14.1`
+### Install necessary libaries for image uploads
+- `sudo apt-get install libmagickwand-dev`
+- `sudo apt-get install imagemagick`
 
-### Nine
-`bundle install`
+### Install nodejs
+- `nvm install 12.14.1`
+I found that rails 6 works well with node 12.14.1
 
-### Ten
-`yarn install --check-files`
+### Install gems
+- `bundle install`
 
-### Eleven
-- `rails db:migrate`
-- `rails db:seed`
+### Install all dependencies
+- `yarn install --check-files`
+
+### Apply migrations and populate the database
+- `rails db:migrate db:seed`
 - `rails s`
+
+GitHub codespace will automatically create port forwading and give a link to open the app in your browser.
+
+If you're running this for the first time, you'll encounter this error.
 
 ![blocked](https://user-images.githubusercontent.com/116260107/218122062-92054913-70b1-43fc-8a12-48875df9448b.PNG)
 
-Let's copy the line and add it to `/rails-store/config/environments/development.rb`
+Copy the line and add it to `/rails-store/config/environments/development.rb`
 ![hosts](https://user-images.githubusercontent.com/116260107/218123555-46a1fa6f-ca5d-4f80-a4bb-a3887aeca18d.PNG)
 
-Stop the server and start it again
+Stop the server and start it again.
 
 
 ## Docker
 We can build and run a dockerfile by:
-- `docker build --tag myapp . `
-- `docker run -p 3000:3000  myapp`
+- `docker build --tag sello . `
+- `docker run -p 3000:3000  sello`
 
+## Checklist
+- [x] Ruby On Rails 6
+- [x] Docker
+- [x] RoR HTML and JSON distribution
+- [x] Models with relationships
+- [x] Views/forms
+- [x] A README for the reviewer to fully understand how to setup our development environment
 
 
 
