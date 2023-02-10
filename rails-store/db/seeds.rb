@@ -8,9 +8,9 @@
 
 
 user = User.new(
-  id: 4,
+  id: 31,
   name: "Fumbani Banda",
-  email: "fumbani@ruby.com",
+  email: "fumba@ni.com",
   password: "password",
   password_confirmation: "password"
 )
