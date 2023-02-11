@@ -7,11 +7,16 @@ I have created an online store that sells musical instruments called `sello`. Us
 - add instruments to cart
 - pay with [stripe](https://stripe.com/)
 
+## How to set up dev environment
+
 ### Fork the repo
 - Fork the repo
 
-### Open in codespace dev environment
-- Open repo in codespace
+### Create a new branch
+- Create new branch
+
+### Open branch in GitHub codespace dev environment
+- Open the new branch in codespace
 
 ### cd to the project folder
 - `cd rails-store`
