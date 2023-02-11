@@ -3,11 +3,23 @@ class CheckoutsController < ApplicationController
 
     def show()
         amount = params[:my_param]
-        current_user.set_payment_processor :stripe
-        current_user.payment_processor.customer
-        
-        
-        @checkout_session = current_user.payment_processor.checkout(mode: 'payment', line_items: 'price_1MZjAxFhqC3MH6nwpmX65V7f', success_url: checkout_success_url)
+
+        @checkout_session = Stripe::Checkout::Session.create(
+            line_items: [{
+              price_data: {
+                currency: 'usd',
+                unit_amount: amount,
+                product_data: {
+                  name: 'Instruments',
+                  description: 'Musical Instruments',
+                },
+              },
+              quantity: 1,
+            }],
+            mode: 'payment',
+            success_url: checkout_success_url
+          )
+
     end 
 
     def success
