@@ -25,28 +25,10 @@ I have created an online store that sells musical instruments called `sello`. Us
 ### Update packages list
 - `sudo apt-get update`
 
-### Install necessary libaries for image uploads
+### Install necessary packages for image uploads
 - `sudo apt-get install libmagickwand-dev`
 - `sudo apt-get install imagemagick`
 
-### Add API keys
-```{admonition} Click the button to reveal!
-:class: dropdown
-
-- delete this file `credentials.yml.enc`
-
-- run this command `EDITOR=”code --wait” rails credentials:edit`
-
-- copy and paste the keys
-
-```
-stripe:
-  public_key:  xxxx
-  private_key: xxxx
-  signing_secret: xxxx
-```
-- Close the file
-```
 ### Install nodejs
 - `nvm install 12.14.1`
 
@@ -57,6 +39,15 @@ I found that rails 6 works well with node 12.14.1
 
 ### Install all dependencies
 - `yarn install --check-files`
+
+### Add API keys
+- delete this file `credentials.yml.enc`
+
+- run this command `EDITOR="code --wait" rails credentials:edit`
+
+- copy and paste the keys
+
+- Close the file
 
 
 ### Apply migrations and populate the database
