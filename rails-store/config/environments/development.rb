@@ -63,7 +63,7 @@ Rails.application.configure do
   #GitHub
   config.hosts << "deadex-ng-supreme-space-spoon-q45q64qrg442x4wx-3000.preview.app.github.dev"
   config.hosts << "lonnw-probable-chainsaw-6qjwq4rwjg9f4qqx-3000.preview.app.github.dev"
-
+  config.hosts << "lonnw-cautious-winner-rqjwqprx44r3pp57-3000.preview.app.github.dev"
   #Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
